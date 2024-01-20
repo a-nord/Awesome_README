@@ -1,21 +1,61 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  
+function renderLicenseBadge(answers) {
+  switch (answers.license) {
+    case "APACHE 2":
+      response = `[![License](https://img.shields.io/badge/License-APACHE_2-pink)]`;
+      return response;
+
+    case "Mozilla":
+      response = `[![License](https://img.shields.io/badge/License-Mozilla-pink)]`;
+      return response;
+
+    case "MIT":
+      response = `[![License: GPL v3](https://img.shields.io/badge/License-MIT-pink)]`;
+      return response;
+
+    case "Boost":
+        response = `[![License: MIT](https://img.shields.io/badge/License-Boost-pink)]`;
+        return response;
+
+    case "None":
+      response = "";
+      return response;
+  }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  return `[https://choosealicense.com/](https://choosealicense.com/)`
-}
+function renderLicenseLink(answers) {
+  switch (answers.license) {
+    case "APACHE 2":
+      response = `(https://www.apache.org/licenses/)`;
+      return response;
+
+    case "Mozilla":
+      response = `(https://choosealicense.com/licenses/mpl-2.0/)`;
+      return response;
+
+    case "MIT":
+      response = `(https://choosealicense.com/licenses/mit/)`;
+      return response;
+
+    case "Boost":
+        response = `(https://choosealicense.com/licenses/bsl-1.0/)`;
+        return response;
+
+    case "None":
+      response = "";
+      return response;
+  }
+};
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function renderLicenseSection(answers) {
   return `##License
-  ${renderLicenseLink(license)}
-  ${renderLicenseBadge(license)}`
+  ${renderLicenseBadge(answers)}${renderLicenseLink(answers)}`
 }
 
 // TODO: Create a function to generate markdown for README
@@ -33,7 +73,10 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
-  
+  - [Contribute](#contribut)
+  - [Tests](#test)
+  - [Contact](#questions)
+
   ## Installation  
   ${data.install}
   
@@ -41,23 +84,25 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Credits
-  ${data.credits}
+  This code was created by ${data.credits}.
     
   ${renderLicenseSection(data.license)}
-  
-  ## Badges
-  
-  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-  
-  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-  
-  ## How to Contribute
+
+  ## Contribute
   
   ${data.contribute}
   
   ## Tests
   
-  ${data.test}`;
+  ${data.test}
+
+  ## Questions:
+  ###What is the GITHUB link?
+  ![${data.username}](${data.github})
+  ###What is the APPLICATION link?
+  ![${data.title}](${data.repoLink})
+  ###How to contact me if you have any questions?
+  ![Contact Me 📧](${data.email})`;
 }
 
 module.exports = generateMarkdown;

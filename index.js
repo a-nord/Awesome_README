@@ -12,8 +12,46 @@ const questions = [{
 
   {
     type: "input",
-    message: "What is the DESCRIPTION of the project? (Include the motivation, reasoning, what it solves, and what you learned.')",
+    message: "What is the DESCRIPTION of the project? (Include the motivation, reasoning, what it solves, and what you learned.)",
     name: "description",
+  },
+
+  {
+    type: "input",
+    message: "What are INSTALLATION steps?",
+    name: "install",
+  },
+
+  {
+    type: "input",
+    message: "How is this app USED?",
+    name: "usage",
+  },
+
+  {
+    type: "input",
+    message: "Who helped create this code (seperate with commas)?",
+    name: "credits",
+  },
+
+  {
+    type: "list",
+    message: "What kind of LICENSE do you want?",
+    name: "license",
+    choices: ["APACHE 2","Mozilla","MIT","Boost", "None"],
+  },
+
+  {
+    type: "list",
+    message: "How do you want coders to CONTRIBUTE?",
+    name: "contribute",
+    choices: ["Fork","No Contributing"],
+  },
+
+  {
+    type: "input",
+    message: "Write any tests (if any).",
+    name: "test",
   },
 
   {
@@ -24,35 +62,34 @@ const questions = [{
 
   {
     type: "input",
-    message: "What is the github REPO NAME?",
-    name: "repoName",
+    message: "What is your github link?",
+    name: "github",
   },
 
   {
     type: "input",
-    message: "What is your LINKEDIN (username)?",
-    name: "linkedin",
+    message: "What is the github REPO link?",
+    name: "repoLink",
   },
 
   {
-    type: "list",
-    message: "What kind of LICENSE do you want?",
-    name: "license",
-    choices: ["APACHE 2.0","Mozilla","MIT","BSD 2", "BSD 3","Boost", "none"],
-  }];
+    type: "input",
+    message: "What is your email?",
+    name: "email",
+  },];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
     const contents = generateMarkdown(data);
-    fs.writeToFile(fileName, contents,(err)=>{
+    fs.writeFile(fileName, contents, (err)=>{
         err? new Error("Write file does not like you!!"): console.log("It's you, not the write file!");
-    })
+    });
 }
 
 // TODO: Create a function to initialize app
 async function init() {
-   const answers = await inquirer.promt(questions);
+   const answers = await inquirer.prompt(questions);
    writeToFile('README.md', answers)
 }
 
