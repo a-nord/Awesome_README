@@ -1,4 +1,4 @@
-#
+# 
 
   ## Description
   
@@ -24,8 +24,8 @@
   ## Credits
   This code was created by .
     
-  ##License
-  undefinedundefined
+  ## License
+  [![License](https://img.shields.io/badge/License-APACHE_2-pink)](https://www.apache.org/licenses/)
 
   ## Contribute
   
@@ -36,9 +36,9 @@
   
 
   ## Questions:
-  ###What is the GITHUB link?
-  ![]()
-  ###What is the APPLICATION link?
-  ![]()
-  ###How to contact me if you have any questions?
-  ![Contact Me 📧]()
+  ### What is the GITHUB link?
+  [ash](google.com)
+  ### What is the APPLICATION link?
+  [ash](google.com)
+  ### How to contact me if you have any questions?
+  [Contact Me 📧](mailto:anord99@yahoo.com)

@@ -1,66 +1,65 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(answers) {
-  switch (answers.license) {
+function renderLicenseBadge(license) {
+  switch (license) {
     case "APACHE 2":
-      response = `[![License](https://img.shields.io/badge/License-APACHE_2-pink)]`;
-      return response;
+      return `[![License](https://img.shields.io/badge/License-APACHE_2-pink)]`;
 
     case "Mozilla":
-      response = `[![License](https://img.shields.io/badge/License-Mozilla-pink)]`;
-      return response;
+      return `[![License](https://img.shields.io/badge/License-Mozilla-pink)]`;
+      
 
     case "MIT":
-      response = `[![License: GPL v3](https://img.shields.io/badge/License-MIT-pink)]`;
-      return response;
+      return `[![License: GPL v3](https://img.shields.io/badge/License-MIT-pink)]`;
+      
 
     case "Boost":
-        response = `[![License: MIT](https://img.shields.io/badge/License-Boost-pink)]`;
-        return response;
+        return `[![License: MIT](https://img.shields.io/badge/License-Boost-pink)]`;
+        
 
     case "None":
-      response = "";
-      return response;
+      return "";
+      
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(answers) {
-  switch (answers.license) {
+function renderLicenseLink(license) {
+  switch (license) {
     case "APACHE 2":
-      response = `(https://www.apache.org/licenses/)`;
-      return response;
+      return `(https://www.apache.org/licenses/)`;
+      
 
     case "Mozilla":
-      response = `(https://choosealicense.com/licenses/mpl-2.0/)`;
-      return response;
+      return `(https://choosealicense.com/licenses/mpl-2.0/)`;
+      
 
     case "MIT":
-      response = `(https://choosealicense.com/licenses/mit/)`;
-      return response;
+      return `(https://choosealicense.com/licenses/mit/)`;
+      
 
     case "Boost":
-        response = `(https://choosealicense.com/licenses/bsl-1.0/)`;
-        return response;
+        return `(https://choosealicense.com/licenses/bsl-1.0/)`;
+        
 
     case "None":
-      response = "";
-      return response;
+      return "";
+      
   }
 };
 
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(answers) {
-  return `##License
-  ${renderLicenseBadge(answers)}${renderLicenseLink(answers)}`
+function renderLicenseSection(license) {
+  return `## License
+  ${renderLicenseBadge(license)}${renderLicenseLink(license)}`
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `#${data.title}
+  return `# ${data.title}
 
   ## Description
   ${data.description}
@@ -97,12 +96,12 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions:
-  ###What is the GITHUB link?
-  ![${data.username}](${data.github})
-  ###What is the APPLICATION link?
-  ![${data.title}](${data.repoLink})
-  ###How to contact me if you have any questions?
-  ![Contact Me 📧](${data.email})`;
+  ### What is the GITHUB link?
+  [${data.username}](${data.github})
+  ### What is the APPLICATION link?
+  [${data.title}](${data.repoLink})
+  ### How to contact me if you have any questions?
+  [Contact Me 📧](mailto:${data.email})`;
 }
 
 module.exports = generateMarkdown;

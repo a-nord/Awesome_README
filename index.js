@@ -78,21 +78,18 @@ const questions = [{
     name: "email",
   },];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-    const contents = generateMarkdown(data);
-    fs.writeFile(fileName, contents, (err)=>{
-        err? new Error("Write file does not like you!!"): console.log("It's you, not the write file!");
+// TODO: Create a function to write README file (put data back)
+function writeToFile(fileName, data) {    
+    fs.writeFile(fileName, generateMarkdown(data), (err)=>{
+        err? new Error("Write file does not like you!!"): console.log("YOU DID IT!!");
     });
 }
 
 // TODO: Create a function to initialize app
 async function init() {
    const answers = await inquirer.prompt(questions);
-   writeToFile('README.md', answers)
+   writeToFile('./dist/README.md', answers)
 }
-
+// writeToFile("README.md");
 // Function call to initialize app
 init();
- 
