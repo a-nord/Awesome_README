@@ -1,7 +1,7 @@
-# 
+# My Awesome README
 
   ## Description
-  
+  this is about a readme
     
   ## Table of Contents (Optional)
   
@@ -16,16 +16,16 @@
   - [Contact](#questions)
 
   ## Installation  
-  
+  the fsahfsl
   
   ## Usage  
-  
+  klsahfa
 
   ## Credits
-  This code was created by .
+  This code was created by meee.
     
   ## License
-  [![License](https://img.shields.io/badge/License-APACHE_2-pink)](https://www.apache.org/licenses/)
+  [![License: GPL v3](https://img.shields.io/badge/License-MIT-pink)](https://choosealicense.com/licenses/mit/)
 
   ## Contribute
   
@@ -33,12 +33,12 @@
   
   ## Tests
   
-  
+  jskalgha
 
   ## Questions:
   ### What is the GITHUB link?
-  [ash](google.com)
+  [anord](google.com)
   ### What is the APPLICATION link?
-  [ash](google.com)
+  [My Awesome README](google.com)
   ### How to contact me if you have any questions?
-  [Contact Me 📧](mailto:anord99@yahoo.com)
+  [Contact Me 📧](mailto:anord@hntb.com)
