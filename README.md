@@ -19,8 +19,11 @@
   ## Usage  
   This app is used to generate high-quality, professional README.md files for projects. It will generate a new file based off of the answers provided by the user.
 
+  Video on how to use:
+  
+
   ## Credits
-  This code was created by John D (teacher).
+  This code was helped created by John D (teacher).
     
   ## License
   [![License: GPL v3](https://img.shields.io/badge/License-MIT-pink)](https://choosealicense.com/licenses/mit/)
