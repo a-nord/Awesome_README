@@ -1,7 +1,7 @@
-# Awesome README Generator
+# Readme
 
   ## Description
-  This project is a README file generator.  It will create high quality, professional README.md.  This app dynamically generates a professional README.md file from a user's input using Inquirer package.  This will also allow users to generate a README.md for the future projects.
+  The description is what you want it to be.
     
   ## Table of Contents 
   
@@ -14,29 +14,29 @@
   - [Contact](#questions)
 
   ## Installation  
-  This app requires Node and inquirer  to be installed. Once installed, users  with access to the app will run the code and will be prompted questions to answer. Once user answers all questions then the README.md file will be made in 'dist' folder so it can be distributed to the corresponding project.
+  type the steps
   
   ## Usage  
-  This app is used to generate high-quality, professional README.md files for projects. It will generate a new file based off of the answers provided by the user.
+  used for readme files
 
   ## Credits
-  This code was created by John D (teacher).
+  This code was created by credit who helps.
     
   ## License
-  [![License: GPL v3](https://img.shields.io/badge/License-MIT-pink)](https://choosealicense.com/licenses/mit/)
+  
 
   ## Contribute
   
-  Fork
+  No Contributing
   
   ## Tests
   
-  N/A
+  no tests
 
   ## Questions:
   ### What is the GITHUB link?
-  [a-nord](https://github.com/a-nord/Awesome_README)
+  [a-nord](google.com)
   ### What is the APPLICATION link?
-  [Awesome README Generator](https://github.com/a-nord/Awesome_README)
+  [Readme](google.com)
   ### How to contact me if you have any questions?
   [Contact Me 📧](mailto:anord99@yahoo.com)

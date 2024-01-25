@@ -20,7 +20,7 @@
   This app is used to generate high-quality, professional README.md files for projects. It will generate a new file based off of the answers provided by the user.
 
   Video on how to use:
-  
+  <video src="assets/images/READMEGen.mp4" controls title="usage of the app"></video>
 
   ## Credits
   This code was helped created by John D (teacher).
@@ -34,7 +34,7 @@
   
   ## Tests
   
-  N/A
+  Test file is located in ./dist folder.
 
   ## Questions:
   ### What is the GITHUB link?
