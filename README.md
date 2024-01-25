@@ -21,6 +21,8 @@
 
   Video on how to use:
   <video src="assets/images/READMEGen.mp4" controls title="usage of the app"></video>
+  Link if it does not show:
+  [video link](https://drive.google.com/file/d/1rACQOOZi_M7ayNs91s8-OuTPMeMSSjNE/view)
 
   ## Credits
   This code was helped created by John D (teacher).
